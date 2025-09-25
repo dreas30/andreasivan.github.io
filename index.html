@@ -1,86 +1,142 @@
-<!-- trigger github pages -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pribadi - Andreas Ivan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: #4a90e2;
-            color: white;
-            padding: 40px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2rem;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .card {
-            background: white;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 15px 10px;
-            margin-top: 30px;
-        }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andreas Ivan | Website Pribadi</title>
+  <style>
+    /* Import font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: #3aa9ff;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 25px 20px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+      background: #a34bff;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .portfolio ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio ul li {
+      background: #f0e5ff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #3aa9ff;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: red;
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
     <header>
-        <h1>Andreas Ivan</h1>
-        <p>Mahasiswa Sistem Informasi</p>
+      <!-- Ganti foto profil sesuai file kamu, misalnya profile.jpg -->
+      <img src="profile.jpg" alt="Foto Andreas Ivan">
+      <h1>Andreas Ivan</h1>
+      <p>Mahasiswa Sistem Informasi</p>
     </header>
 
-    <section>
-        <div class="card">
-            <h2>Tentang Saya</h2>
-            <p>Halo 👋 saya Andreas, mahasiswa Sistem Informasi yang sedang belajar membuat website dan mengembangkan diri di bidang teknologi.</p>
-        </div>
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya mahasiswa Sistem Informasi yang sedang belajar membuat website
+        dan terus mengembangkan diri di bidang teknologi. Selain itu, saya juga
+        tertarik pada dunia bisnis, khususnya di bidang Food & Beverage (F&B).
+      </p>
+    </section>
 
-        <div class="card">
-            <h2>Portofolio</h2>
-            <p>- Website pribadi sederhana<br>- Proyek Sistem Informasi<br>- Database project (SQL / PostgreSQL)</p>
-        </div>
-
-        <div class="card">
-            <h2>Kontak</h2>
-            <p>📧 Email: <a href="mailto:andreasivang3447@gmail.com">andreasivang3447@gmail.com</a>
-            <p>📷 Instagram: <a href="https://www.instagram.com/44dreas/" target="_blank">@44dreas</a></p>
-        </div>
+    <section class="portfolio">
+      <h2>Portofolio</h2>
+      <ul>
+        <li>🌐 Website pribadi sederhana</li>
+        <li>💻 Proyek Sistem Informasi</li>
+        <li>📊 Database project (SQL / PostgreSQL)</li>
+      </ul>
     </section>
 
     <footer>
-        <p>© 2025 Andreas Ivan - Dibuat dengan ❤️</p>
+      © 2025 Andreas Ivan - Dibuat dengan <span>❤</span>
     </footer>
+  </div>
 </body>
 </html>
-
-
