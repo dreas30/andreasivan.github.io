@@ -1,228 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Andreas Ivan — Web Developer</title>
-  <meta name="description" content="Portofolio Andreas Ivan — Web Developer | Front-end, Back-end (Flask), Database">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root{--accent:#0d6efd}
-    body{font-family: system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    .hero{background:linear-gradient(180deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));}
-    .skill-level{font-size:.85rem}
-    .card-project{transition:transform .18s ease, box-shadow .18s ease}
-    .card-project:hover{transform:translateY(-6px); box-shadow:0 8px 24px rgba(13,110,253,0.08)}
-    .divider{height:1px;background:linear-gradient(90deg,transparent,#eee,transparent)}
-    .badge-tech{border-radius:0.5rem; padding:.35rem .6rem; font-size:.85rem}
-    .footer{background:#f8f9fa}
-    .fade-in{opacity:0;transform:translateY(10px);animation:fadeIn .8s ease forwards}
-  @keyframes fadeIn{to{opacity:1;transform:none}}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andreas Ivan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body { background-color: #ffffff; font-family: 'Inter', sans-serif; }
+        .hero {
+            background: url('https://ubsgold.com/wp-content/uploads/2024/07/Career-Banner.jpg') center/cover no-repeat;
+            color: white; padding: 120px 20px; text-align: center;
+        }
+        .hero h1 { font-size: 48px; font-weight: 700; }
+        .hero p { font-size: 20px; }
+        .section-title { text-align: center; font-weight: 700; margin-top: 60px; margin-bottom: 20px; }
+        .profile-wrapper img {
+            width: 150px; height:150px; border-radius:50%; object-fit:cover; border:4px solid white;
+        }
+        .skills span { padding: 10px 18px; margin:5px; border-radius:20px; background:#f2f2f2; display:inline-block; }
+        .card { border:none; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+        footer { margin-top: 60px; padding: 20px; background: #111; color: #aaa; text-align: center; }
+    </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Andreas Ivan</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-      </ul>
+
+    <div class="hero" style="background: linear-gradient(135deg,#4b79a1,#283e51); padding:140px 20px; text-align:center; color:white;">
+        <div class="profile-wrapper mb-3" data-aos="fade-down" mb-3">
+            <img src="https://dreas30.github.io/andreasivan.github.io/profile.jpg" alt="Foto Profil" />
+        </div>
+        <h1 style="margin-top:10px; font-size:42px; font-weight:700;">Andreas Ivan</h1>
+        <p>Mahasiswa Sistem Informasi • Web Developer • Business Enthusiast</p>
+        <a href="#portfolio" class="btn btn-light">Lihat Portofolio</a>
     </div>
-  </div>
-</nav>
 
-<header class="hero py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-5 fw-bold">Halo, saya <span class="text-primary">Andreas Ivan</span></h1>
-        <p class="lead">Web Developer | Fokus pada website responsif & aplikasi sederhana menggunakan <strong>Python Flask</strong> dan <strong>Bootstrap</strong>.</p>
-        <p>Saya membuat solusi praktis dan rapi—dari front-end sampai back-end. Berikut beberapa proyek dan kemampuan saya.</p>
-        <div class="mt-4">
-          <a href="#projects" class="btn btn-primary me-2">Lihat Proyek</a>
-          <a href="#contact" class="btn btn-outline-primary">Hubungi Saya</a>
-        </div>
-      </div>
-      <div class="col-md-5 text-center mt-4 mt-md-0">
-        <div class="card shadow-sm" style="max-width:320px;margin-left:auto">
-          <div class="card-body text-center">
-            <img src="https://avatars.githubusercontent.com/dreas30?s=200" alt="Andreas" class="rounded-circle mb-3" width="110" height="110">
-            <h5 class="card-title mb-0">Andreas Ivan</h5>
-            <small class="text-muted">Web Developer</small>
-            <p class="mt-2 small">Mahasiswa | Pembuat aplikasi sederhana & website</p>
-            <div class="d-flex gap-2 justify-content-center">
-              <a href="https://github.com/dreas30" target="_blank" class="btn btn-outline-secondary btn-sm">GitHub</a>
-              <a href="https://www.instagram.com/44dreas?igsh=MWxsNGRrM2RsM2gyeA==" target="_blank" class="btn btn-outline-secondary btn-sm">Instagram</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="text-center">
+            Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan website, teknologi, dan bisnis modern.
+            Saya aktif membuat proyek web menggunakan HTML, Bootstrap, Python Flask, dan SQL. Siap berkembang dan berkontribusi pada perusahaan profesional.
+        </p>
     </div>
-  </div>
-</header>
 
-<main class="py-5">
-  <div class="container">
-    <!-- About -->
-    <section id="about" class="mb-5">
-      <h2 class="h4">Tentang Saya</h2>
-      <div class="row mt-3">
-        <div class="col-lg-8">
-          <p>Saya seorang mahasiswa yang menyukai dunia web development. Saya memulai dari HTML & CSS, kemudian mendalami JavaScript dasar, Python, dan Flask. Saya menikmati membangun proyek yang memberi nilai praktis: fitur autentikasi, CRUD, hingga deploy sederhana.</p>
-          <p>Nilai saya: <strong>detail-oriented</strong>, <strong>konsisten belajar</strong>, dan <strong>mendokumentasikan pekerjaan</strong>. Saya tertarik untuk berkontribusi pada proyek yang membutuhkan solusi sederhana namun andal.</p>
+    <div class="container text-center">
+        <h2 class="section-title">Skill & Teknologi</h2>
+        <div class="skills">
+            <span>HTML & CSS</span>
+            <span>Bootstrap</span>
+            <span>Python Flask</span>
+            <span>SQL / MySQL</span>
         </div>
-        <div class="col-lg-4">
-          <ul class="list-unstyled">
-            <li><strong>Lokasi:</strong> Indonesia</li>
-            <li><strong>Email:</strong> <a href="mailto:andreasivang3447@gmail.com">andreasivang3447@gmail.com</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/dreas30" target="_blank">github.com/dreas30</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <div class="divider mb-4"></div>
+    <div class="container" id="portfolio">
+        <h2 class="section-title">Portofolio</h2>
+        <div class="row justify-content-center" data-aos="fade-up">
 
-    <!-- Skills -->
-    <section id="skills" class="fade-in" class="mb-5">
-      <h2 class="h4">Keahlian & Teknologi</h2>
-      <div class="row mt-3">
-        <div class="col-md-6">
-          <h6 class="text-muted">Front-End</h6>
-          <p class="mb-1">HTML5 • CSS3 • Bootstrap 5 • JavaScript (dasar)</p>
-          <h6 class="text-muted mt-3">Back-End</h6>
-          <p class="mb-1">Python • Flask (routing, session, template)</p>
-        </div>
-        <div class="col-md-6">
-          <h6 class="text-muted">Database & Tools</h6>
-          <p class="mb-1">MySQL • SQLite • Git & GitHub • VS Code • Postman</p>
-          <div class="mt-3">
-            <span class="badge bg-white border badge-tech">Full-Stack (Pemula-Menengah)</span>
-            <span class="badge bg-white border badge-tech">Responsive Design</span>
-            <span class="badge bg-white border badge-tech">Deployment: GitHub Pages</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider mb-4"></div>
-
-    <!-- Projects -->
-    <section id="projects" class="mb-5">
-      <h2 class="h4">Proyek Pilihan</h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
-        <!-- Project 1 -->
-        <div class="col">
-          <div class="card card-project h-100">
-            <div class="card-body">
-              <h5 class="card-title">Sistem Login & Dashboard (Flask)</h5>
-              <p class="card-text">Aplikasi autentikasi sederhana menggunakan Flask dan SQLite. Fitur register, login, proteksi halaman, dan dashboard pengguna.</p>
-              <p class="mb-1"><strong>Peran:</strong> Backend + Frontend</p>
-              <p class="mb-1"><strong>Teknologi:</strong> Python, Flask, SQLite, Bootstrap</p>
-              <a href="#" class="stretched-link">Lihat kode / demo</a>
+            <div class="col-md-5 mb-4">
+                <div class="card p-3" data-aos="fade-up">
+                    <img src="./logocupangndasmu.jpg" class="card-img-top" alt="Project 1" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Website Cupang Ndasmu</h5>
+                        <p class="card-text">Website katalog produk ikan cupang dengan tampilan modern dan responsif.</p>
+                        <a href="https://produk-cupang-ndasmu.vercel.app/" class="btn btn-primary">Kunjungi</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col">
-          <div class="card card-project h-100">
-            <div class="card-body">
-              <h5 class="card-title">Website Informasi Ikan Cupang</h5>
-              <p class="card-text">
-<img src="./logo-cupang-ndasmu.png" alt="Logo Cupang Ndasmu" style="width:120px; margin:10px 0;">Website profil dengan galeri, halaman produk, dan kontak. Fokus pada layout responsif dan optimasi gambar.</p>
-              <p class="mb-1"><strong>Peran:</strong> Frontend</p>
-              <p class="mb-1"><strong>Teknologi:</strong> HTML, CSS, Bootstrap</p>
-              <a href="https://dreas30.github.io/andreasivan.github.io/" target="_blank" class="stretched-link">Lihat demo</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col">
-          <div class="card card-project h-100">
-            <div class="card-body">
-              <h5 class="card-title">Aplikasi CRUD Data Mahasiswa</h5>
-              <p class="card-text">Aplikasi CRUD untuk mengelola data mahasiswa, koneksi MySQL, fungsi tambah/edit/hapus, serta tampilan tabel dinamis.</p>
-              <p class="mb-1"><strong>Peran:</strong> Backend + Database</p>
-              <p class="mb-1"><strong>Teknologi:</strong> Flask, MySQL, Bootstrap</p>
-              <a href="#" class="stretched-link">Lihat kode</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="col">
-          <div class="card card-project h-100">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Pribadi</h5>
-              <p class="card-text">Website ini sendiri — memuat tentang saya, daftar proyek, dan kontak. Dideploy di GitHub Pages.</p>
-              <p class="mb-1"><strong>Peran:</strong> Full Stack (deploy)</p>
-              <p class="mb-1"><strong>Teknologi:</strong> HTML, CSS, Bootstrap, GitHub Pages</p>
-              <a href="https://dreas30.github.io/andreasivan.github.io/" target="_blank" class="stretched-link">Lihat website</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <div class="divider mb-4"></div>
+            <div class="col-md-5 mb-4">
+                <div class="card p-3" data-aos="fade-up">
+                    <img src="https://i.postimg.cc/G2zbrtX0/cupang.jpg" class="card-img-top" alt="Project 2" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sistem Login Flask</h5>
+                        <p class="card-text">Proyek backend sederhana menggunakan Python Flask dan SQLAlchemy.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Contact -->
-    <section id="contact" class="mb-5">
-      <h2 class="h4">Kontak</h2>
-      <p class="mt-2">Ingin bekerjasama atau menanyakan sesuatu? Silakan hubungi saya.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <form action="mailto:andreasivang3447@gmail.com" method="post" enctype="text/plain">
-            <div class="mb-3">
-              <label class="form-label">Nama</label>
-              <input class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input class="form-control" type="email" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Pesan</label>
-              <textarea class="form-control" rows="4" required></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Kirim</button>
-          </form>
         </div>
-        <div class="col-md-6">
-          <h6>Informasi Kontak</h6>
-          <ul class="list-unstyled">
-            <li><strong>Email:</strong> <a href="mailto:andreasivang3447@gmail.com">andreasivang3447@gmail.com</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/dreas30" target="_blank">github.com/dreas30</a></li>
-            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/44dreas?igsh=MWxsNGRrM2RsM2gyeA==" target="_blank">@andreasivano05</a></li>
-          </ul>
-          
-        </div>
-      </div>
-    </section>
-  </div>
-</main>
+    </div>
 
-<footer class="footer py-4">
-  <div class="container text-center">
-    <small class="text-muted">© "Andreas Ivan" — Built with HTML, Bootstrap & Flask experiments • <a href="#">Download CV</a></small>
-  </div>
-</footer>
+    <div class="container text-center">
+        <h2 class="section-title">Kontak Saya</h2>
+        <p>Email: <b>andreasivang3447@gmail.com</b></p>
+        <p>GitHub: <a href="https://github.com/dreas30">github.com/dreas30</a></p>
+        
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', function(e){
-      const target = document.querySelector(this.getAttribute('href'));
-      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
-    });
-  });
-</script>
+    <footer>© 2025 Andreas Ivan. All Rights Reserved.</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
 </body>
 </html>
