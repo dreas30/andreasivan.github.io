@@ -16,7 +16,9 @@
     .divider{height:1px;background:linear-gradient(90deg,transparent,#eee,transparent)}
     .badge-tech{border-radius:0.5rem; padding:.35rem .6rem; font-size:.85rem}
     .footer{background:#f8f9fa}
-  </style>
+    .fade-in{opacity:0;transform:translateY(10px);animation:fadeIn .8s ease forwards}
+  @keyframes fadeIn{to{opacity:1;transform:none}}
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -89,7 +91,7 @@
     <div class="divider mb-4"></div>
 
     <!-- Skills -->
-    <section id="skills" class="mb-5">
+    <section id="skills" class="fade-in" class="mb-5">
       <h2 class="h4">Keahlian & Teknologi</h2>
       <div class="row mt-3">
         <div class="col-md-6">
@@ -102,9 +104,9 @@
           <h6 class="text-muted">Database & Tools</h6>
           <p class="mb-1">MySQL • SQLite • Git & GitHub • VS Code • Postman</p>
           <div class="mt-3">
-            <span class="badge bg-light border badge-tech">Full-Stack (Pemula-Menengah)</span>
-            <span class="badge bg-light border badge-tech">Responsive Design</span>
-            <span class="badge bg-light border badge-tech">Deployment: GitHub Pages</span>
+            <span class="badge bg-white border badge-tech">Full-Stack (Pemula-Menengah)</span>
+            <span class="badge bg-white border badge-tech">Responsive Design</span>
+            <span class="badge bg-white border badge-tech">Deployment: GitHub Pages</span>
           </div>
         </div>
       </div>
@@ -134,7 +136,7 @@
             <div class="card-body">
               <h5 class="card-title">Website Informasi Ikan Cupang</h5>
               <p class="card-text">
-<img src="logo-cupang-ndasmu.png" alt="Logo Cupang Ndasmu" style="width:120px; margin:10px 0;">Website profil dengan galeri, halaman produk, dan kontak. Fokus pada layout responsif dan optimasi gambar.</p>
+<img src="./logo-cupang-ndasmu.png" alt="Logo Cupang Ndasmu" style="width:120px; margin:10px 0;">Website profil dengan galeri, halaman produk, dan kontak. Fokus pada layout responsif dan optimasi gambar.</p>
               <p class="mb-1"><strong>Peran:</strong> Frontend</p>
               <p class="mb-1"><strong>Teknologi:</strong> HTML, CSS, Bootstrap</p>
               <a href="https://dreas30.github.io/andreasivan.github.io/" target="_blank" class="stretched-link">Lihat demo</a>
@@ -199,7 +201,7 @@
             <li><strong>GitHub:</strong> <a href="https://github.com/dreas30" target="_blank">github.com/dreas30</a></li>
             <li><strong>Instagram:</strong> <a href="https://www.instagram.com/44dreas?igsh=MWxsNGRrM2RsM2gyeA==" target="_blank">@andreasivano05</a></li>
           </ul>
-          <p class="small text-muted">Catatan: Ganti tautan dan deskripsi proyek sesuai repositori / demo yang sebenarnya.</p>
+          
         </div>
       </div>
     </section>
